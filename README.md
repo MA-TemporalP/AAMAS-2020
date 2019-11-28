@@ -3,6 +3,7 @@ AAMAS-2020 repository
 ***************************************************************
 
 This repository constinas the domain and problems used in:
+
 "Task Allocation Strategy for Heterogeneous Robot Teams in Offshore Missions"
 
 1. First folder (constrained_domain) contains the domain and problems that consider 
