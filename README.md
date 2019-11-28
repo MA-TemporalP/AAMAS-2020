@@ -1,5 +1,5 @@
 ***************************************************************
-* AAMAS-2020 repository                                       *
+AAMAS-2020 repository                                       
 ***************************************************************
 
 This repository constinas the domain and problems used in:
@@ -11,3 +11,13 @@ This repository constinas the domain and problems used in:
 
 2. Second folder (non-constrained_domain) constains a version of the domain and problems
    in folder one without using the predicates generate by  the MRGA strategy.
+   
+   How to run it?
+   
+   --> Clone the repository
+   --> Compile the planners:
+       Refer to 1) IPC-2018 (https://ipc2018-temporal.bitbucket.io/) for TemporAl, TFLAP & OPTIC
+                2) LPG (http://zeus.ing.unibs.it/lpg/) 
+                3) TFD (http://gki.informatik.uni-freiburg.de/tools/tfd/)
+                4) POPF (https://nms.kcl.ac.uk/planning/software/popf.html)
+                
