@@ -2420,4 +2420,5 @@
     (poi_pressure_analysis wp80)
     (poi_pressure_analysis wp81)
 )))
+(:metric minimize (total-time))
 )

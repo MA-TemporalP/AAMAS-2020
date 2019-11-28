@@ -2385,4 +2385,5 @@
     (poi_valve_turned wp75)
     (poi_valve_turned wp80)
 ))
+(:metric minimize (total-time))
 )

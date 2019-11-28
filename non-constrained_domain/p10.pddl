@@ -2409,4 +2409,5 @@
     (poi_temperature_analysis wp54)
     (poi_temperature_analysis wp55)
 )))
+(:metric minimize (total-time))
 )

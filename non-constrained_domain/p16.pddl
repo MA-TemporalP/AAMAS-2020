@@ -2423,4 +2423,5 @@
     (poi_observation wp80)
     (poi_observation wp83)
 )))
+(:metric minimize (total-time))
 )

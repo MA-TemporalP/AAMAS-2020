@@ -2375,4 +2375,5 @@
     (poi_valve_inspection wp72)
     (poi_valve_inspection wp75)
 ))
+(:metric minimize (total-time))
 )

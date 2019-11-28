@@ -2395,4 +2395,5 @@
     (poi_image_taken wp53)
     (poi_image_taken wp55)
 )))
+(:metric minimize (total-time))
 )
