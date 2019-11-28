@@ -17,7 +17,8 @@ This repository constinas the domain and problems used in:
    
        --> Clone the repository
        --> Compile the planners:
-       Refer to 1) IPC-2018 (https://ipc2018-temporal.bitbucket.io/) for TemporAl, TFLAP & OPTIC
+       
+                1) IPC-2018 (https://ipc2018-temporal.bitbucket.io/) for TemporAl, TFLAP & OPTIC
        
                 2) LPG (http://zeus.ing.unibs.it/lpg/) 
                 
