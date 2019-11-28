@@ -118,7 +118,7 @@
 )
 (:durative-action take_image
  :parameters (?r - robot ?s - robot_sensor  ?wp - observation_point)
- :duration (= ?duration 7)
+ :duration (= ?duration 5)
  :condition (and
             (over all (robot_can_act ?r  ?wp))
             (over all (equipped_for_camera_imaging ?r ?s))
@@ -139,7 +139,7 @@
 )
 (:durative-action valve_inspection
  :parameters (?r - robot   ?s - robot_sensor ?wp - observation_point)
- :duration ( = ?duration 50)
+ :duration ( = ?duration 20)
  :condition (and
              (over all (robot_can_act ?r  ?wp))
              (over all (at ?r ?wp))
@@ -160,7 +160,7 @@
 )
 (:durative-action check_temperature
 :parameters (?r - robot ?s - robot_sensor ?wp - observation_point)
-:duration (= ?duration 20)
+:duration (= ?duration 10)
 :condition (and
            (over all (robot_can_act ?r  ?wp))
            (over all (at ?r ?wp))
@@ -180,7 +180,7 @@
 )
 (:durative-action check_pressure
 :parameters (?r - robot ?s - robot_sensor  ?wp - observation_point)
-:duration (= ?duration 20)
+:duration (= ?duration 10)
 :condition (and
            (over all (robot_can_act ?r  ?wp))
            (over all (at ?r ?wp))
