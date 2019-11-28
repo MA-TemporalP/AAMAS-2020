@@ -15,10 +15,16 @@ This repository constinas the domain and problems used in:
    
    How to run it?
    
-   --> Clone the repository
-   --> Compile the planners:
+       --> Clone the repository
+       --> Compile the planners:
        Refer to 1) IPC-2018 (https://ipc2018-temporal.bitbucket.io/) for TemporAl, TFLAP & OPTIC
+       
                 2) LPG (http://zeus.ing.unibs.it/lpg/) 
+                
                 3) TFD (http://gki.informatik.uni-freiburg.de/tools/tfd/)
+                
                 4) POPF (https://nms.kcl.ac.uk/planning/software/popf.html)
+                
+                
+         --> Run the planners using the domain and problem required
                 
