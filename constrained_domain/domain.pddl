@@ -13,7 +13,7 @@
              (can_inspect_valve ?r - robot)
              (can_supervise_process ?r - robot)
              (close_to ?wpi  ?wpf - observation_point)
-             (surface_point_at ?r -robot ?wp - observation_point)
+             (surface_point_at ?r - robot ?wp - observation_point)
              (equipped_for_temperature_analysis ?r - robot ?s - robot_sensor)
              (equipped_for_pression_analysis ?r - robot ?s - robot_sensor)
              (equipped_for_camera_imaging ?r - robot ?s - robot_sensor)
@@ -118,7 +118,7 @@
 )
 (:durative-action take_image
  :parameters (?r - robot ?s - robot_sensor  ?wp - observation_point)
- :duration (= ?duration 5)
+ :duration (= ?duration 7)
  :condition (and
             (over all (robot_can_act ?r  ?wp))
             (over all (equipped_for_camera_imaging ?r ?s))
@@ -139,7 +139,7 @@
 )
 (:durative-action valve_inspection
  :parameters (?r - robot   ?s - robot_sensor ?wp - observation_point)
- :duration ( = ?duration 20)
+ :duration ( = ?duration 50)
  :condition (and
              (over all (robot_can_act ?r  ?wp))
              (over all (at ?r ?wp))
@@ -160,7 +160,7 @@
 )
 (:durative-action check_temperature
 :parameters (?r - robot ?s - robot_sensor ?wp - observation_point)
-:duration (= ?duration 10)
+:duration (= ?duration 20)
 :condition (and
            (over all (robot_can_act ?r  ?wp))
            (over all (at ?r ?wp))
@@ -180,7 +180,7 @@
 )
 (:durative-action check_pressure
 :parameters (?r - robot ?s - robot_sensor  ?wp - observation_point)
-:duration (= ?duration 10)
+:duration (= ?duration 20)
 :condition (and
            (over all (robot_can_act ?r  ?wp))
            (over all (at ?r ?wp))
@@ -230,14 +230,14 @@
 
 )
 (:durative-action surface_point_allocation
-:parameters (?r - robot ?wpi  ?wpf - observation_point)
-:duration ( = ?duration 1)
-:condition (and
+ :parameters (?r - robot ?wpi  ?wpf - observation_point)
+ :duration ( = ?duration 1)
+ :condition (and
            (over all (robot_can_act ?r  ?wpf))
            (over all (close_to ?wpi ?wpf))
            (over all (at ?r ?wpi))
            )
-:effect (and
+ :effect (and
         (at end (surface_point_at ?r ?wpf))
         )
 )
